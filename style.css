@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,600');
+html, body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  background-color:#a8cfff;
+}
+.project-title{
+  text-align:center;
+}
+.project-title img{
+  display:block;
+  margin:auto;
+  width:25%;
+}
+.card-flip-wrapper{
+  width: 90%;
+  height: 80%;
+  max-width: 500px;
+  max-height: 500px;
+  position: relative;
+  -o-perspective: 900px;
+  -webkit-perspective: 900px;
+  -ms-perspective: 900px;
+  perspective: 900px;
+  margin: 0 auto;
+}
+#card-flip{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 50px auto;
+  position: absolute;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -o-transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.card-front img{
+  width:100%;
+  filter: drop-shadow(0 0 0.5rem grey);
+}
+.flip{
+  -o-transform: rotateY(-180deg);
+  -webkit-transform: rotateY(-180deg);
+  -ms-transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
+}
+#flip-card-front, #flip-card-back{
+  position:absolute;
+  top:8px;
+  right:4px;
+  background-color:#fff;
+  color:#000;
+  border:1px solid grey;
+}
+#card-flip .card-front, #card-flip .card-back{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  -o-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 2;
+}
+#card-flip .card-back{
+  -o-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+}
+

@@ -1,0 +1,46 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Flash Cards</title>
+    <link rel="stylesheet" href="foundation-6.5.1-complete/css/foundation.css">
+    <link rel="stylesheet" href="foundation-6.5.1-complete/css/app.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="project-title">
+      <img src="http://i66.tinypic.com/dzt7yv.png" border="0" alt="Pokemon-logo"></a>
+    </div>
+    <div class="card-flip-wrapper">
+      <div id="card-flip">
+        <div class="card-front">
+          <img src="https://daily.pokecommunity.com/wp-content/uploads/2016/04/whos_that_pokemon_eevee.png" alt="shadow-card">
+          <button id="flip-card-front">Reveal</button>
+        </div>
+        <div class="card-back">
+          <img src="http://i65.tinypic.com/289ea91.jpg" border="0" alt="Eevee-Reveal"><p>Eevee</p>
+          <button id="flip-card-back">Hide</button>
+        </div>
+      </div>
+    </div>
+    <script>
+          document.addEventListener('DOMContentLoaded', function(event) {
+
+          document.getElementById('flip-card-back').style.visibility = 'visible';
+          document.getElementById('flip-card-front').style.visibility = 'visible';
+
+          document.getElementById('flip-card-back').onclick = function() {
+          document.getElementById('card-flip').classList.toggle('flip');
+          };
+
+          document.getElementById('flip-card-front').onclick = function() {
+          document.getElementById('card-flip').classList.toggle('flip');
+          };
+
+        });
+    </script>
+  </body>
