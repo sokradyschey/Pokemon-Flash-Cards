@@ -59,7 +59,7 @@ html, body{
 #flip-card-back{
   position:absolute;
   top:0;
-  right:-45px;
+  right:-75px;
   background-color:#fff;
   color:#000;
   border:1px solid grey;
