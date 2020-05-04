@@ -13,34 +13,19 @@
   </head>
   <body>
     <div class="project-title">
-      <img src="http://i66.tinypic.com/dzt7yv.png" border="0" alt="Pokemon-logo"></a>
+      <img src="./images/pokemon-logo-black-transparent.png" border="0" alt="Pokemon-logo"></a>
     </div>
     <div class="card-flip-wrapper">
       <div id="card-flip">
         <div class="card-front">
-          <img src="https://daily.pokecommunity.com/wp-content/uploads/2016/04/whos_that_pokemon_eevee.png" alt="shadow-card">
+          <img src="./images/eevee-shadow.png" alt="shadow-card">
           <button id="flip-card-front">Reveal</button>
         </div>
         <div class="card-back">
-          <img src="http://i65.tinypic.com/289ea91.jpg" border="0" alt="Eevee-Reveal"><p>Eevee</p>
+          <img src="./images/eevee.png" border="0" alt="Eevee-Reveal"><p>Eevee</p>
           <button id="flip-card-back">Hide</button>
         </div>
       </div>
     </div>
-    <script>
-          document.addEventListener('DOMContentLoaded', function(event) {
-
-          document.getElementById('flip-card-back').style.visibility = 'visible';
-          document.getElementById('flip-card-front').style.visibility = 'visible';
-
-          document.getElementById('flip-card-back').onclick = function() {
-          document.getElementById('card-flip').classList.toggle('flip');
-          };
-
-          document.getElementById('flip-card-front').onclick = function() {
-          document.getElementById('card-flip').classList.toggle('flip');
-          };
-
-        });
-    </script>
+    <script src="app.js"></script>
   </body>
