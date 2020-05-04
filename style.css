@@ -50,10 +50,16 @@ html, body{
   -ms-transform: rotateY(-180deg);
   transform: rotateY(-180deg);
 }
-#flip-card-front, #flip-card-back{
+#flip-card-front{
   position:absolute;
-  top:8px;
-  right:4px;
+  background-color:#fff;
+  color:#000;
+  border:1px solid grey;
+}
+#flip-card-back{
+  position:absolute;
+  top:0;
+  right:-45px;
   background-color:#fff;
   color:#000;
   border:1px solid grey;
